@@ -1,0 +1,23 @@
+package problem.pkg05;
+
+import java.util.Scanner;
+
+public class Problem05 {
+
+    static Scanner hp = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int i, j, k, n;
+        System.out.print("Enter Any Number You Want: ");
+        n = hp.nextInt();
+        for (i = 1; i <= n; i++) {
+            for (j = i; j < n; j++) {
+                System.out.print(" ");
+            }
+            for (k = 1; k < (i*2); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
